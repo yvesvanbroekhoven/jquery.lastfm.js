@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset=utf-8>
+  <title>Show your Last.fm recent played tracks</title>
+  
+  <style type="text/css" media="screen">
+    html { margin: 0; height: 100%; background: #B3EFE8; font-family: Georgia, serif; color: #3F7F78; }
+  </style>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="jquery.lastfm.js"></script>
+  <script>
+    
+    // DOM Ready
+    $(function(){
+      $('#container').lastfm('ivow106', '1281b73ef126516097b9bc3763e249d8', {
+        limit: 50
+      });
+    });
+    
+  </script>
+</head>
+<body>
+  <div id="container">
+
+  </div>
+</body>
+</html>
